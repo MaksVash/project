@@ -1,5 +1,5 @@
-let numberOfFilm=prompt('How match films did you see?','');
-console.log(numberOfFilm);
+let numberOfFilm=+prompt('How match films did you see?','');
+;
 
 let personalMuvieDB={
     count:numberOfFilm,
@@ -9,7 +9,17 @@ let personalMuvieDB={
     private:false,
 };
 
-let lastFilm=prompt('what last film did you see?','');
-let reiting=prompt('how match did you like it','');
 
-let movies ={lastFilm:reiting};
+
+
+let a=prompt('what last film did you see?','Film'),
+b=+prompt('how match did you like it','1-10'),
+c=prompt('what last film did you see?','Film'),
+d=+prompt('how match did you like it','1-10');
+
+personalMuvieDB.movies[a]=b;
+personalMuvieDB.movies[c]= d;
+
+
+
+console.log(personalMuvieDB);
